@@ -34,8 +34,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/rybconstructora-web/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/rybconstructora-web/apple-touch-icon.png" />
     <link rel="manifest" href="/rybconstructora-web/site.webmanifest" />
-    <script type="module" crossorigin src="/rybconstructora-web/assets/index-CQXqr7Kx.js"></script>
-    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/index-DJyYnwQ3.css">
+    <script type="module" crossorigin src="/rybconstructora-web/assets/index-DRIHbzfo.js"></script>
+    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/index-DSgGqVs9.css">
   </head>
   <body>
     <canvas id="fondo" aria-hidden="true"></canvas>
@@ -43,6 +43,21 @@
     <div class="grano" aria-hidden="true"></div>
 
     <a class="saltar" href="#servicios">Saltar al contenido</a>
+
+    <!-- Sprite de íconos: se define una vez y se referencia con <use>. -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <symbol
+        id="i-tel"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+      >
+        <rect x="6.75" y="2.75" width="10.5" height="18.5" rx="2.6" />
+        <line x1="10.25" y1="18.2" x2="13.75" y2="18.2" />
+      </symbol>
+    </svg>
 
     <header class="barra" id="barra">
       <a class="marca" href="#inicio" aria-label="Constructora R&amp;B, inicio">
@@ -101,7 +116,13 @@
           <a class="btn btn--fantasma btn--grande" href="#servicios">Ver qué hacemos</a>
         </div>
         <div class="hero__pie">
-          <a class="hero__tel" data-tel></a>
+          <a class="tel" data-tel>
+            <span class="tel__icono" aria-hidden="true"><svg><use href="#i-tel" /></svg></span>
+            <span class="tel__texto">
+              <em>Llamanos</em>
+              <strong data-tel-numero></strong>
+            </span>
+          </a>
           <span class="hero__scroll"><i></i> Deslizá para levantar la obra</span>
         </div>
       </section>
@@ -174,7 +195,10 @@
             <a class="btn btn--acento btn--grande" data-whatsapp target="_blank" rel="noopener">
               Escribir por WhatsApp
             </a>
-            <a class="btn btn--fantasma btn--grande" data-tel></a>
+            <a class="btn btn--fantasma btn--grande" data-tel>
+              <svg class="ico" aria-hidden="true"><use href="#i-tel" /></svg>
+              <span data-tel-numero></span>
+            </a>
           </div>
           <ul class="contacto__redes">
             <li><a data-instagram target="_blank" rel="noopener">Instagram</a></li>
