@@ -34,8 +34,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/rybconstructora-web/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/rybconstructora-web/apple-touch-icon.png" />
     <link rel="manifest" href="/rybconstructora-web/site.webmanifest" />
-    <script type="module" crossorigin src="/rybconstructora-web/assets/index-Bke3F0cD.js"></script>
-    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/index-D6778EVm.css">
+    <script type="module" crossorigin src="/rybconstructora-web/assets/inicio-BABzxKRY.js"></script>
+    <link rel="modulepreload" crossorigin href="/rybconstructora-web/assets/comun-JUZVL0Nm.js">
+    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/comun-C6gtx_ka.css">
   </head>
   <body>
     <canvas id="fondo" aria-hidden="true"></canvas>
@@ -170,18 +171,20 @@
           <h2 class="reveal">Obras en curso y entregadas</h2>
           <p class="seccion__intro reveal">
             Edificios, dúplex, viviendas, remodelaciones y obra industrial en Asunción, Gran
-            Asunción y el interior. El seguimiento de cada obra, con avances reales, lo publicamos
-            en nuestras redes.
+            Asunción y el interior. Cada obra tiene su ficha con ubicación, superficie, plazo y
+            alcance del trabajo.
           </p>
           <p class="aviso reveal" id="obras-aviso" hidden></p>
         </header>
-        <div class="obras" id="obras-lista"></div>
+        <div class="obras obras--destacadas" id="obras-lista"></div>
         <div class="obras__pie reveal">
+          <!-- Una sola etiqueta: el botón es flex y con `gap` el número se
+               separaría del texto como si fuera otro ítem. -->
+          <a class="btn btn--acento btn--grande" href="obras/"
+            ><span>Ver todas las obras (<span id="obras-total"></span>)</span></a
+          >
           <a class="btn btn--fantasma" data-instagram target="_blank" rel="noopener">
             Ver avances en Instagram
-          </a>
-          <a class="btn btn--fantasma" data-facebook target="_blank" rel="noopener">
-            Seguirnos en Facebook
           </a>
         </div>
       </section>

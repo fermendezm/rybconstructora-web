@@ -1,0 +1,1 @@
+import{n as e,r as t}from"./comun-JUZVL0Nm.js";t(),e(`.galeria img`).forEach(e=>{e.addEventListener(`error`,()=>e.closest(`figure`)?.remove(),{once:!0})});
