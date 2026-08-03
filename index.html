@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Constructora R&amp;B — Movimiento de suelo, estructuras metálicas y viviendas | Paraguay</title>
+    <meta
+      name="description"
+      content="Constructora R&B S.A. (Rodríguez & Beltramino S.A.). Movimiento de suelo, estructuras metálicas y construcción de viviendas en Paraguay. Equipo propio y personal calificado."
+    />
+    <meta name="theme-color" content="#080a0d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Constructora R&B — Construimos lo que sostiene" />
+    <meta
+      property="og:description"
+      content="Movimiento de suelo, estructuras metálicas y viviendas. Constructora paraguaya con equipo propio."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080a0d'/%3E%3Ctext x='32' y='43' font-family='Archivo,sans-serif' font-size='30' font-weight='800' fill='%23ffab2e' text-anchor='middle'%3ER%26B%3C/text%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="/rybconstructora-web/assets/index-DkWJO1W5.js"></script>
+    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/index-Bn3oh15a.css">
+  </head>
+  <body>
+    <canvas id="fondo" aria-hidden="true"></canvas>
+    <div class="vineta" aria-hidden="true"></div>
+    <div class="grano" aria-hidden="true"></div>
+
+    <a class="saltar" href="#servicios">Saltar al contenido</a>
+
+    <header class="barra" id="barra">
+      <a class="marca" href="#inicio" aria-label="Constructora R&amp;B, inicio">
+        <span class="marca__sigla">R&amp;B</span>
+        <span class="marca__texto">
+          <strong>Constructora R&amp;B</strong>
+          <em>Rodríguez &amp; Beltramino S.A.</em>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#obras">Obras</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn--acento barra__cta" data-whatsapp target="_blank" rel="noopener">
+        Pedir presupuesto
+      </a>
+      <button class="menu" id="menu" aria-expanded="false" aria-controls="nav-movil">
+        <span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+    </header>
+
+    <div class="nav-movil" id="nav-movil" hidden>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#obras">Obras</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--acento" data-whatsapp target="_blank" rel="noopener">Pedir presupuesto</a>
+    </div>
+
+    <!-- Riel de etapas: refleja en qué punto de la obra está el fondo 3D -->
+    <aside class="riel" id="riel" aria-hidden="true">
+      <ol></ol>
+      <div class="riel__barra"><span id="riel-progreso"></span></div>
+    </aside>
+
+    <main>
+      <section class="hero" id="inicio">
+        <p class="etiqueta reveal">Paraguay · Constructora R&amp;B S.A.</p>
+        <h1 class="hero__titulo reveal">
+          <span>Construimos</span>
+          <span>lo que <em>sostiene</em></span>
+        </h1>
+        <p class="hero__bajada reveal">
+          Movemos suelo, levantamos estructuras metálicas y entregamos viviendas terminadas.
+          Equipo propio y personal calificado en cada etapa de la obra.
+        </p>
+        <div class="hero__acciones reveal">
+          <a class="btn btn--acento btn--grande" data-whatsapp target="_blank" rel="noopener">
+            Hablar por WhatsApp
+          </a>
+          <a class="btn btn--fantasma btn--grande" href="#servicios">Ver qué hacemos</a>
+        </div>
+        <div class="hero__pie">
+          <a class="hero__tel" data-tel></a>
+          <span class="hero__scroll"><i></i> Deslizá para levantar la obra</span>
+        </div>
+      </section>
+
+      <div class="marquesina" aria-hidden="true"><div class="marquesina__pista" id="marquesina"></div></div>
+
+      <section class="seccion" id="servicios">
+        <header class="seccion__cab">
+          <p class="etiqueta reveal">Qué hacemos</p>
+          <h2 class="reveal">Tres frentes, una sola obra</h2>
+          <p class="seccion__intro reveal">
+            Cubrimos la obra de punta a punta: desde el primer movimiento de tierra hasta la
+            terminación. Menos intermediarios, menos tiempos muertos.
+          </p>
+        </header>
+        <div class="servicios" id="servicios-lista"></div>
+      </section>
+
+      <section class="seccion" id="proceso">
+        <header class="seccion__cab">
+          <p class="etiqueta reveal">Cómo trabajamos</p>
+          <h2 class="reveal">Del terreno a la entrega</h2>
+          <p class="seccion__intro reveal">
+            Un método corto y claro. Sabés en qué etapa está tu obra y qué viene después.
+          </p>
+        </header>
+        <ol class="proceso" id="proceso-lista"></ol>
+      </section>
+
+      <section class="seccion" id="obras">
+        <header class="seccion__cab">
+          <p class="etiqueta reveal">Portafolio</p>
+          <h2 class="reveal">Obras en curso y entregadas</h2>
+          <p class="seccion__intro reveal">
+            Cada obra tiene su código y su seguimiento propio. El registro completo, con avances
+            reales, está publicado en nuestras redes.
+          </p>
+        </header>
+        <div class="obras" id="obras-lista"></div>
+        <div class="obras__pie reveal">
+          <a class="btn btn--fantasma" data-instagram target="_blank" rel="noopener">
+            Ver avances en Instagram
+          </a>
+          <a class="btn btn--fantasma" data-facebook target="_blank" rel="noopener">
+            Seguirnos en Facebook
+          </a>
+        </div>
+      </section>
+
+      <section class="seccion contacto" id="contacto">
+        <div class="contacto__caja reveal">
+          <p class="etiqueta">Siguiente paso</p>
+          <h2>Contanos qué querés construir</h2>
+          <p class="contacto__texto">
+            Escribinos con la ubicación del terreno y qué tenés en mente. Te respondemos con los
+            próximos pasos y un presupuesto claro.
+          </p>
+          <div class="contacto__acciones">
+            <a class="btn btn--acento btn--grande" data-whatsapp target="_blank" rel="noopener">
+              Escribir por WhatsApp
+            </a>
+            <a class="btn btn--fantasma btn--grande" data-tel></a>
+          </div>
+          <ul class="contacto__redes">
+            <li><a data-instagram target="_blank" rel="noopener">Instagram</a></li>
+            <li><a data-facebook target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__marca">
+        <span class="marca__sigla">R&amp;B</span>
+        <div>
+          <strong>Constructora R&amp;B S.A.</strong>
+          <em>Rodríguez &amp; Beltramino S.A. · Paraguay</em>
+        </div>
+      </div>
+      <nav class="pie__nav" aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#obras">Obras</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="pie__legal">© <span id="anio"></span> Constructora R&amp;B S.A. Todos los derechos reservados.</p>
+    </footer>
+
+  </body>
+</html>
