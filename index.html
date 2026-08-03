@@ -34,8 +34,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/rybconstructora-web/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/rybconstructora-web/apple-touch-icon.png" />
     <link rel="manifest" href="/rybconstructora-web/site.webmanifest" />
-    <script type="module" crossorigin src="/rybconstructora-web/assets/index-DRIHbzfo.js"></script>
-    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/index-DSgGqVs9.css">
+    <script type="module" crossorigin src="/rybconstructora-web/assets/index-Bke3F0cD.js"></script>
+    <link rel="stylesheet" crossorigin href="/rybconstructora-web/assets/index-D6778EVm.css">
   </head>
   <body>
     <canvas id="fondo" aria-hidden="true"></canvas>
@@ -56,6 +56,18 @@
       >
         <rect x="6.75" y="2.75" width="10.5" height="18.5" rx="2.6" />
         <line x1="10.25" y1="18.2" x2="13.75" y2="18.2" />
+      </symbol>
+      <symbol
+        id="i-wa"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M20.8 11.6a8.4 8.4 0 0 1-12.5 7.3l-4.6 1.4 1.5-4.5A8.4 8.4 0 1 1 20.8 11.6Z" />
+        <path d="M9.3 8.7c-.4 1 0 2.1.8 3.2a8 8 0 0 0 2.7 2.7c1.1.8 2.2 1.2 3.2.8" />
       </symbol>
     </svg>
 
@@ -226,6 +238,20 @@
       </nav>
       <p class="pie__legal">© <span id="anio"></span> Constructora R&amp;B S.A. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Acceso permanente a WhatsApp. Entra una vez pasado el hero, que ya
+         tiene su propio botón, para no duplicar la misma acción en pantalla. -->
+    <a
+      class="flotante"
+      id="flotante"
+      data-whatsapp
+      target="_blank"
+      rel="noopener"
+      aria-label="Escribinos por WhatsApp"
+    >
+      <svg class="ico" aria-hidden="true"><use href="#i-wa" /></svg>
+      <span>WhatsApp</span>
+    </a>
 
   </body>
 </html>
