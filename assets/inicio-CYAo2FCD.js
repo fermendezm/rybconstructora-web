@@ -1,4 +1,4 @@
-import{a as e,i as t,n,o as r,r as i,s as a,t as o}from"./comun-JUZVL0Nm.js";var s=e=>String(e).replace(/[&<>"']/g,e=>({"&":`&amp;`,"<":`&lt;`,">":`&gt;`,'"':`&quot;`,"'":`&#39;`})[e]),c=e=>e.estado.toLowerCase()===`en obra`;function l(e,t=`obras/`,n=0){return`
+import{a as e,i as t,n,o as r,r as i,s as a,t as o}from"./comun-DO6z7AGP.js";var s=e=>String(e).replace(/[&<>"']/g,e=>({"&":`&amp;`,"<":`&lt;`,">":`&gt;`,'"':`&quot;`,"'":`&#39;`})[e]),c=e=>e.estado.toLowerCase()===`en obra`;function l(e,t=`obras/`,n=0){return`
     <a class="obra${c(e)?` obra--curso`:``} reveal"
        href="${t}${s(e.slug)}/"
        style="--retraso:${n}ms">
